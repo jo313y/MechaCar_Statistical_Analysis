@@ -325,3 +325,35 @@ Manufacturing_Lot  Mean Median Variance     SD
 1 Lot1              1500   1500     0.980  0.990
 2 Lot2              1500.  1500     7.47   2.73 
 3 Lot3              1496.  1498.  170.    13.0  
+
+# Deliverable 3
+> pop_psi <- c(1500,1500,1500)
+> DataFrame.PopPSI <- data.frame(pop_psi)
+> View(DataFrame.PopPSI)
+
+> t.test((lot_summary$Mean),(DataFrame.PopPSI$pop_psi)) #compare means of two samples
+
+Welch Two Sample t-test
+
+data:  (lot_summary$Mean) and (DataFrame.PopPSI$pop_psi)
+t = -0.92336, df = 2, p-value = 0.4533
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  -6.904932  4.464932
+sample estimates:
+  mean of x mean of y 
+1498.78   1500.00 
+
+> t.test((lot_summary$Mean),(DataFrame.PopPSI$pop_psi), subset="Lot1") #compare means of two samples
+
+Welch Two Sample t-test
+
+data:  (lot_summary$Mean) and (DataFrame.PopPSI$pop_psi)
+t = -0.92336, df = 2, p-value = 0.4533
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  -6.904932  4.464932
+sample estimates:
+  mean of x mean of y 
+1498.78   1500.00 
+
