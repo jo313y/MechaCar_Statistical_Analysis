@@ -6,17 +6,13 @@ R analysis
 ![MechCarMPGStats](https://user-images.githubusercontent.com/86981530/149685383-8469805e-12d4-4473-b697-cc7f7d6dba00.PNG)
 
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-the intercept, vehicle_lenth, ground_clearance, and vehicle_weight provided non-random amount of variance in the mpg values. The intercept provide a non-random aount of variance as well, which means the data may need to be transformed or there is another variable that was not used in this model. 
+Looking at the above statistical analyses it can be shown that the vehicle_length, ground_clearance, and vehicle_weight provided non-random amount of variance in the mpg values. The intercept provide a non-random aount of variance as well, which means the data may need to be transformed or there is another variable that was not used in this model.
 
-Is the slope of the linear model considered to be zero? Why or why not?
-The slope of the linear model is not considered to be zero. The value is -1.04e+2, which is a non-zero value. The intercept not on the zero mark is another indicator that the analysis may have missing data. 
+Looking at the intercept, the slope of the linear model is  not considered to be zero. The value is -1.04e+2, which is a non-zero, negative value. The intercept not on the zero mark is another indicator that the analysis may have missing data. This can sometimes indicate a bias in data depending on the analysis. In this case, it is important to look at the actual values of the intercept.
 
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 This linear model fits the data for mpg of the MechaCar prototypes well. The R-squared value is 0.71, which is a positive correlation with this model. 
-Furthermore, the p-value is significant, meaning we can reject the null hypothesis.
-
-However, due to the significance of the intercept, this means there are variables missing which means this model will most likely not be useful when predicting trends. 
+Furthermore, the p-value is significant, meaning we can reject the null hypothesis. However, due to the significance of the intercept and it's non-random association with the data, the model will most likely not be useful when predicting future trends. 
 
 ## Summary Statistics on Suspension
 
